@@ -1,3 +1,5 @@
+require('awchad.wm-events')
+
 ---@type table
 awesome = awesome
 ---@type table
