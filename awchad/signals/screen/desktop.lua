@@ -1,5 +1,6 @@
 local awful = require('awful')
 local wibox = require('wibox')
+local beautiful = require('beautiful')
 
 screen.connect_signal('request::desktop_decoration', function(screen)
   awful.tag({ '1', '2', '3', '4', '5', '6' }, screen, awful.layout.layouts[1])
@@ -33,7 +34,10 @@ screen.connect_signal('request::desktop_decoration', function(screen)
 
   screen.statusbar = awful.wibar({
     screen = screen,
-    position = 'top',
+    position = beautiful.statusbar.position,
+    height = beautiful.statusbar.height,
+    bg = beautiful.statusbar.background,
+    fg = beautiful.statusbar.foreground,
     widget = {
       layout = wibox.layout.align.horizontal,
       {
