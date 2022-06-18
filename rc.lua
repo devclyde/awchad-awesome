@@ -1,6 +1,6 @@
-local ok, result = pcall(require, 'awchad')
+AWCHAD_MODIFIER = 'Mod4'
 
-AWCHAD_MODIFIER = os.getenv('AWCHAD_MODIFIER') or 'Mod4'
+local ok, result = pcall(require, 'awchad')
 
 if not ok then
   error(result)

@@ -6,7 +6,6 @@ require('awchad.signals.naughty')
 require('awchad.signals.ruled.client')
 require('awchad.signals.ruled.notification')
 require('awchad.signals.tag')
-require('awchad.signals.screen.desktop')
 
 require('awchad.mappings.global.mouse')
 
